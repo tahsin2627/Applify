@@ -3,35 +3,103 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>My Music WebApp</title>
+<title>Spotube Remode</title>
 <style>
   body {
     margin: 0;
-    background-color: #000;
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
     color: #fff;
-    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-  img { width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.7); }
-  h2 { margin-top: 20px; font-size: 24px; }
-  p { color: #aaa; margin-top: 8px; }
-  .controls { margin-top: 30px; display: flex; gap: 20px; }
-  button { background: none; border: 2px solid #fff; border-radius: 50px; padding: 10px 20px; color: #fff; cursor: pointer; font-size: 16px; }
-  button:hover { background-color: #333; }
+  .cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  p {
+    color: #999;
+    margin: 0;
+  }
+  .controls {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  button {
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #333;
+  }
+
+  /* Progress bar style */
+  .progress-container {
+    width: 100%;
+    max-width: 400px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    margin-top: 30px;
+  }
+  .progress {
+    height: 6px;
+    background: #1DB954;
+    width: 50%; /* You can animate this later for progress */
+    border-radius: 3px;
+  }
 </style>
 </head>
 <body>
-<!-- Replace the image URL with your favorite album cover -->
-<img src="https://via.placeholder.com/600" alt="Album Cover"/>
-<h2>My Song Title</h2>
-<p>Artist Name</p>
-<div class="controls">
-  <button>&lt; Prev</button>
-  <button>&#9654; Play</button>
-  <button>Next &gt;</button>
+<div class="header">
+  <h1>Spotube</h1>
+</div>
+
+<div class="main">
+  <!-- Change the image link to your preferred album art -->
+  <img src="https://source.unsplash.com/400x400/?music,album" class="cover" />
+  <h2>Song Title</h2>
+  <p>Artist Name</p>
+
+  <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress"></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button>&lt; Prev</button>
+    <button>&#9654; Play</button>
+    <button>Next &gt;</button>
+  </div>
 </div>
 </body>
 </html>
