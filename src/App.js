@@ -13,8 +13,8 @@ function App() {
       padding: '20px',
       color: '#fff',
     }}>
-      <h1>Your React App is Ready!</h1>
-      {/* You can replace this with your music player layout */}
+      <h1>Your React Music Player</h1>
+      {/* Replace this with your UI later */}
     </div>
   );
 }
