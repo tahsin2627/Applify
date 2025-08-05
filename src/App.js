@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 
 function App() {
@@ -8,13 +7,14 @@ function App() {
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'center',
-      padding: '20px',
+      alignItems: 'center',
       color: '#fff',
+      fontFamily: 'Arial, sans-serif',
     }}>
-      <h1>Your React Music Player</h1>
-      {/* Replace this with your UI later */}
+      <h1>My Music Player</h1>
+      {/* You can add your player UI here */}
+      <p>This is your React starter!</p>
     </div>
   );
 }
